@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
 	<title>Holiday Resort</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
+	<meta name="description" content="'raspberry honey' settlement ">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240908223510">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241005214917">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,16 +27,19 @@
 						<nav class="hero__menu menu">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="#" class="menu__link">Strona Główna</a>
+									<a data-goto=".hero" href="#" class="menu__link">Strona Główna</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">O nas</a>
+									<a data-goto=".about" href="#" class="menu__link">O nas</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Atrakcje</a>
+									<a data-goto=".attractions" href="#" class="menu__link">Atrakcje</a>
 								</li>
 								<li class="menu__item">
-									<a href="#" class="menu__link">Udogodnenia</a>
+									<a data-goto=".facilities" href="#" class="menu__link">Udogodnenia</a>
+								</li>
+								<li class="menu__item">
+									<a data-goto=".contacts" href="#" class="menu__link">Kontakt</a>
 								</li>
 							</ul>
 						</nav>
@@ -79,49 +83,49 @@
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-01.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Park wodny</h5>
+							<h3 class="item-attractions__title">Park wodny</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-02.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Kuligi</h5>
+							<h3 class="item-attractions__title">Kuligi</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-03.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Stoki</h5>
+							<h3 class="item-attractions__title">Stoki</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-04.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Resorty SPA</h5>
+							<h3 class="item-attractions__title">Resorty SPA</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-05.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Park linowy</h5>
+							<h3 class="item-attractions__title">Park linowy</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-06.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Resturacje i Karczmy</h5>
+							<h3 class="item-attractions__title">Resturacje i Karczmy</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-07.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Trójtyk</h5>
+							<h3 class="item-attractions__title">Trójtyk</h3>
 						</div>
 						<div data-watch data-watch-once class="attractions__item item-attractions">
 							<div class="item-attractions__icon">
 								<img src="img/attractions/icon-08.svg" alt="icon">
 							</div>
-							<h5 class="item-attractions__title">Szlaki turystyczne</h5>
+							<h3 class="item-attractions__title">Szlaki turystyczne</h3>
 						</div>
 					</div>
 					<a data-watch href="#" class="attractions__link"><span>ZOBACZ PEŁNĄ LISTĘ ATRAKCJI</span></a>
@@ -142,37 +146,37 @@
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">NARCIARNIA</h4>
-										<img class="section-facilities__image" src="img/facilities/image-01.webp" alt="Image">
+										<img data-src="img/facilities/image-01.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">PLAC ZABAW DLA DZIECI</h4>
-										<img class="section-facilities__image" src="img/facilities/image-02.webp" alt="Image">
+										<img data-src="img/facilities/image-02.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">DUŻE TARASY Z WYPOSAŻENIEM</h4>
-										<img class="section-facilities__image" src="img/facilities/image-03.webp" alt="Image">
+										<img data-src="img/facilities/image-03.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">PRYWATNE BALIE OGRZEWANE DREWNEM</h4>
-										<img class="section-facilities__image" src="img/facilities/image-04.webp" alt="Image">
+										<img data-src="img/facilities/image-04.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">DUŻA WIATA Z PALENISKIEM</h4>
-										<img class="section-facilities__image" src="img/facilities/image-05.webp" alt="Image">
+										<img data-src="img/facilities/image-05.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">PRYWATNE RILLE ORAZ DREWNO DO BALII</h4>
-										<img class="section-facilities__image" src="img/facilities/image-06.webp" alt="Image">
+										<img data-src="img/facilities/image-06.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 							</div>
@@ -183,37 +187,37 @@
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">TARAS Z WIDOKIEM</h4>
-										<img class="section-facilities__image" src="img/facilities/image-07.webp" alt="Image">
+										<img data-src="img/facilities/image-07.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">ZESTAW RĘCZNIKÓW I SZLAFROKÓW</h4>
-										<img class="section-facilities__image" src="img/facilities/image-08.webp" alt="Image">
+										<img data-src="img/facilities/image-08.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">PLYTĘ INDUKCYJNĄ, PIEKARNIK I ZMYWARKĘ</h4>
-										<img class="section-facilities__image" src="img/facilities/image-09.webp" alt="Image">
+										<img data-src="img/facilities/image-09.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">SMART TV <br> Z WIFI</h4>
-										<img class="section-facilities__image" src="img/facilities/image-10.webp" alt="Image">
+										<img data-src="img/facilities/image-10.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption"> </h4>
-										<img class="section-facilities__image" src="img/facilities/image-11.webp" alt="Image">
+										<img data-src="img/facilities/image-11.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 								<article class="section-facilities__item">
 									<a href="#" class="section-facilities__link">
 										<h4 class="section-facilities__caption">EKPRES DO KAWY NA ZIARNA</h4>
-										<img class="section-facilities__image" src="img/facilities/image-12.webp" alt="Image">
+										<img data-src="img/facilities/image-12.webp" class="section-facilities__image" alt="Image">
 									</a>
 								</article>
 
@@ -281,7 +285,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240908223510"></script>
+	<script src="js/app.min.js?_v=20241005214917"></script>
 </body>
 
 </html>

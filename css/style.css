@@ -124,26 +124,6 @@ h6 {
   -o-object-fit: cover;
   object-fit: cover
 }
-.ibg--top {
-  -o-object-position: top;
-  object-position: top
-}
-.ibg--bottom {
-  -o-object-position: bottom;
-  object-position: bottom
-}
-.ibg--left {
-  -o-object-position: left;
-  object-position: left
-}
-.ibg--right {
-  -o-object-position: right;
-  object-position: right
-}
-.ibg--contain {
-  -o-object-fit: contain;
-  object-fit: contain
-}
 .header-block {
   text-align: center;
   opacity: 0;
@@ -251,6 +231,10 @@ h6 {
 }
 .hero__header {
   text-align: center
+}
+.hero__logo {
+  max-width: 13.625rem;
+  height: auto
 }
 .hero__content {
   text-align: center;
